@@ -15,9 +15,9 @@
   },
   "scripts": {
     "postinstall": "husky install",
-    "serve": "parcel serve src/index.html",
+    "serve": "parcel serve src/index.html -p 1102 --open",
     "prebuild": "rm -rf dist",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.js",
     "lint": "concurrently npm:lint:*",
     "lint:commit": "commitlint --from origin/main --to HEAD --verbose",
     "lint:es": "eslint . --ignore-path .gitignore --max-warnings 0",

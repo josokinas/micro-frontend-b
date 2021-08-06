@@ -1,12 +1,13 @@
 import React, { StrictMode } from 'react';
-import { render } from 'react-dom';
+import { render as renderReactDom } from 'react-dom';
 import './styles.scss';
 
-(async () => {
-  render(
+export const root = document.createElement('div');
+
+export const render = () =>
+  renderReactDom(
     <StrictMode>
       <p>Micro Frontend B</p>
     </StrictMode>,
-    document.getElementById('root')
+    root
   );
-})();
