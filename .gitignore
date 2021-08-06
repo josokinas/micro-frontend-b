@@ -22,5 +22,5 @@ node_modules
 yarn.lock
 
 # Parcel specific
-.parcel-cache
+.cache
 dist
