@@ -1,6 +1,6 @@
 import React, { StrictMode } from 'react';
 import { render as renderReactDom } from 'react-dom';
-import './styles.scss';
+import styles from './styles.scss';
 
 if (!window.MFE) window.MFE = {};
 
@@ -11,7 +11,7 @@ window.MFE.B = {
   render: () =>
     renderReactDom(
       <StrictMode>
-        <p>Micro Frontend B</p>
+        <p className={styles.text}>Micro Frontend B</p>
       </StrictMode>,
       root
     ),
