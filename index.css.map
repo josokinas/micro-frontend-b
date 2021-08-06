@@ -1,1 +1,1 @@
-{"version":3,"sources":["styles.scss"],"names":[],"mappings":"AAAA,EACE","file":"index.css","sourceRoot":"../src","sourcesContent":["p {\n  color: #0f0;\n}\n"]}
+{"version":3,"sources":["styles.scss"],"names":[],"mappings":"AAAA,aACE","file":"index.css","sourceRoot":"../src","sourcesContent":[".text {\n  color: #0f0;\n}\n"]}
