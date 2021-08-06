@@ -1,5 +1,5 @@
 (async () => {
-  const { render, root } = await import('./index');
-  document.body.appendChild(root);
-  render();
+  await import('./index');
+  document.body.appendChild(window.MFE.B.root);
+  window.MFE.B.render();
 })();
