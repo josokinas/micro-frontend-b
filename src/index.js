@@ -1,6 +1,6 @@
 import React, { StrictMode } from 'react';
 import { render as renderReactDom } from 'react-dom';
-import styles from './styles.scss';
+import * as styles from './styles.scss';
 
 if (!window.MFE) window.MFE = {};
 
