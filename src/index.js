@@ -8,10 +8,11 @@ const root = document.createElement('div');
 
 window.MFE.B = {
   root,
-  render: () =>
+  render: (props) =>
     render(
       <StrictMode>
         <p className={styles.text}>Micro Frontend B</p>
+        {JSON.stringify(props)}
       </StrictMode>,
       root
     ),
