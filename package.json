@@ -24,6 +24,7 @@
     "serve": "parcel serve src/index.html -p 1102 --open",
     "prebuild": "rm -rf dist",
     "build": "parcel build src/index.js --target orchestration",
+    "postbuild": "./scripts/make_index.sh",
     "lint": "concurrently npm:lint:*",
     "lint:commit": "commitlint --from origin/main --to HEAD --verbose",
     "lint:es": "eslint . --ignore-path .gitignore --max-warnings 0",

@@ -1,0 +1,1 @@
+echo "(function(href){if(document.querySelector('link[href=\"https://josokinas.github.io/micro-frontend-b/index.css\"]')) return;let link = document.createElement('link');link.rel = 'stylesheet';link.href = href;document.head.appendChild(link);}('https://josokinas.github.io/micro-frontend-b/index.css'))" >> dist/index.js
