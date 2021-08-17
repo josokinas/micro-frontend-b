@@ -2,7 +2,7 @@ let loaded = false;
 
 const load = async () => {
   await import('./index');
-  document.body.appendChild(window.MFE.A.root);
+  document.body.appendChild(window.MFE.B.root);
   loaded = true;
 };
 
@@ -10,7 +10,7 @@ let timesRendered = 0;
 
 const render = (props) => {
   if (!loaded) return;
-  window.MFE.A.render(props);
+  window.MFE.B.render(props);
 };
 
 load();
